@@ -1,0 +1,23 @@
+.OuterSingleArea {
+  width: 416px;
+  height: 416px;
+  border: 2px solid #ddd;
+  border-radius: 420px;
+  position: absolute;
+  left: 90px;
+  top: 90px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.OuterSingleArea b {
+  width: 208px;
+  height: 208px;
+  position: absolute;
+  left: 208px;
+  top: 0;
+  transform-origin: 0 208px;
+}
+.OuterSingleArea b span {
+  border-radius: 0 208px 0 0;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+}

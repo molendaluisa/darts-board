@@ -1,0 +1,21 @@
+.OuterRing .wrapper {
+    width: 578px;
+    height: 578px;
+    border: 2px solid #ddd;
+    border-radius: 580px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  .OuterRing .numbersTop {
+    width: 60px;
+    height: 50px;
+    font: normal 50px/50px arial, sans-serif;
+    color: #ddd;
+    position: absolute;   
+    left: 270px;
+    top: 3px;
+    text-align: center;
+    text-shadow: -1px 0 1px #eee, 1px 0 1px #000;
+    transform-origin: 30px 297px;
+  }

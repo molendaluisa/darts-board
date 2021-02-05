@@ -1,0 +1,23 @@
+.DoubleArea {
+  width: 446px;
+  height: 446px;
+  border: 2px solid #ddd;
+  border-radius: 450px;
+  position: absolute;
+  left: 75px;
+  top: 75px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.DoubleArea b {
+  width: 223px;
+  height: 223px;
+  position: absolute;
+  left: 223px;
+  top: 0;
+  transform-origin: 0 223px;
+}
+.DoubleArea b span {
+  border-radius: 0 223px 0 0;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+}
