@@ -67,6 +67,9 @@ export default function Board() {
     } else if (rSum === 501) {
       alert(`GAME OVER. ${p.name} is the winner`);
     } else {
+      setPlayer1({ ...player1, currentPlayer: currentPlayer === "player1" ? "turn-wrapper hide": "turn-wrapper"});
+      setPlayer2({ ...player2, currentPlayer: currentPlayer === "player1" ? "turn-wrapper": "turn-wrapper hide"});
+    
       alert("NO SCORE");
     }
     setDart1(0);
@@ -106,7 +109,7 @@ export default function Board() {
         <div className="scores">
           <Scoreboard player1={player1} player2={player2} handleNext={handleNext} />
           <Throw dart1={dart1} dart2={dart2} dart3={dart3} />
-          <Average player1={player1} player2={player2} />
+          <Average player1={player1} player2={player2}  />
         </div>
       </div>
     </div>
