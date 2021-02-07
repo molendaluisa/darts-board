@@ -1,4 +1,9 @@
-.Board {
+.Board .middle-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Board .container {
   width: 600px;
   height: 600px;
   background: #333;
@@ -6,6 +11,14 @@
   position: relative;
   margin: 50px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.Board .scores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 100px;
 }
 
 .Board .p11 {
@@ -82,75 +95,72 @@
   transform: rotate(-72deg);
 }
 .green {
-    background: #363;
+  border-color: #363 transparent transparent transparent;
 }
 .red {
-    background: #a33;
+  border-color: #a33 transparent transparent transparent;
 }
 .black {
-    background: #333;
+  border-color: #333 transparent transparent transparent;
 }
 .white {
-   background: #eec;
-}
-.Board b.b20 {
-  transform: rotate(-81deg) skewX(-72deg);
-}
-.Board b.b1 {
-  transform: rotate(-63deg) skewX(-72deg);
-}
-.Board b.b18 {
-  transform: rotate(-45deg) skewX(-72deg);
-}
-.Board b.b4 {
-  transform: rotate(-27deg) skewX(-72deg);
-}
-.Board b.b13 {
-  transform: rotate(-9deg) skewX(-72deg);
-}
-.Board b.b6 {
-  transform: rotate(9deg) skewX(-72deg);
-}
-.Board b.b10 {
-  transform: rotate(27deg) skewX(-72deg);
-}
-.Board b.b15 {
-  transform: rotate(45deg) skewX(-72deg);
-}
-.Board b.b2 {
-  transform: rotate(63deg) skewX(-72deg);
-}
-.Board b.b17 {
-  transform: rotate(81deg) skewX(-72deg);
-}
-.Board b.b3 {
-  transform: rotate(99deg) skewX(-72deg);
-}
-.Board b.b19 {
-  transform: rotate(117deg) skewX(-72deg);
-}
-.Board b.b7 {
-  transform: rotate(135deg) skewX(-72deg);
-}
-.Board b.b16 {
-  transform: rotate(153deg) skewX(-72deg);
-}
-.Board b.b8 {
-  transform: rotate(171deg) skewX(-72deg);
-}
-.Board b.b11 {
-  transform: rotate(189deg) skewX(-72deg);
-}
-.Board b.b14 {
-  transform: rotate(207deg) skewX(-72deg);
-}   
-.Board b.b9 {
-  transform: rotate(225deg) skewX(-72deg);
-}
-.Board b.b12 {
-  transform: rotate(243deg) skewX(-72deg);
-}
-.Board b.b5 {
-  transform: rotate(261deg) skewX(-72deg);
+  border-color: #eec transparent transparent transparent;
 }
 
+.Board b.b1 {
+  transform: rotate(18deg);
+}
+.Board b.b18 {
+  transform: rotate(36deg);
+}
+.Board b.b4 {
+  transform: rotate(54deg);
+}
+.Board b.b13 {
+  transform: rotate(72deg);
+}
+.Board b.b6 {
+  transform: rotate(90deg);
+}
+.Board b.b10 {
+  transform: rotate(108deg);
+}
+.Board b.b15 {
+  transform: rotate(126deg);
+}
+.Board b.b2 {
+  transform: rotate(144deg);
+}
+.Board b.b17 {
+  transform: rotate(162deg);
+}
+.Board b.b3 {
+  transform: rotate(180deg);
+}
+.Board b.b19 {
+  transform: rotate(198deg);
+}
+.Board b.b7 {
+  transform: rotate(216deg);
+}
+.Board b.b16 {
+  transform: rotate(234deg);
+}
+.Board b.b8 {
+  transform: rotate(252deg);
+}
+.Board b.b11 {
+  transform: rotate(270deg);
+}
+.Board b.b14 {
+  transform: rotate(288deg);
+}
+.Board b.b9 {
+  transform: rotate(306deg);
+}
+.Board b.b12 {
+  transform: rotate(324deg);
+}
+.Board b.b5 {
+  transform: rotate(342deg);
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
+
+.Throw {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  width: 420px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.Throw .top {
+  color: #eee;
+  background: #333;
+  padding: 1px 0;
+  border-top-left-radius: 2px;
+}
+
+.Throw .values {
+  color: #333;
+  background: #fff;
+  padding: 1px 0;
+  border-bottom-left-radius: 2px;
+}
+
+.Throw .sum {
+  background: #1b9714;
+  color: #fff;
+  font-size: 22px;
+  padding: 11px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}

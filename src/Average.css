@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
+
+.Average {
+  width: 120px;
+  height: 120px;
+  color: #eee;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.Average .avg-num {
+  background: #1b9714;
+  padding: 25px 10px;
+  font-size: 22px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.Average .avg-label {
+  background: #a33;
+  padding: 15px 10px;
+  border-top: 1px solid #eee;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
+
+.ScoreBoard {
+  width: 480px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 20px;
+}
+.ScoreBoard .top,
+.ScoreBoard .bottom {
+  color: #eee;
+  background-color: #333;
+}
+
+.ScoreBoard .top {
+  text-align: center;
+}
+
+.ScoreBoard .darts-count {
+  background-color: yellow;
+  color: #000;
+  text-align: center;
+}
+
+.ScoreBoard .darts-count span {
+  vertical-align: text-top;
+}
+
+.ScoreBoard .col-1 {
+  padding: 0 !important;
+}
+
+.ScoreBoard .name {
+  color: #333;
+  font-size: 20px;
+  background-color: #fff;
+}
+.ScoreBoard .score {
+  background-color: #1b9714;
+  color: #eee;
+  text-align: center;
+}
+
+.ScoreBoard .score span {
+  vertical-align: text-top;
+}
+
+.ScoreBoard .turn-wrapper {
+  background-color: #a33;
+  padding: 10px;
+  padding-left: 15px;
+}
+.ScoreBoard .turn {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 10px 7px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.ScoreBoard .hide {
+  display: none;
+}

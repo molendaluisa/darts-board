@@ -2,22 +2,19 @@
   width: 300px;
   height: 300px;
   border: 2px solid #ddd;
-  border-radius: 300px;
+  border-radius: 50%;
   position: absolute;
   left: 148px;
   top: 148px;
-  overflow: hidden;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
 }
 .TripleArea b {
-  width: 150px;
-  height: 150px;
   position: absolute;
-  left: 150px;
-  top: 0;
-  transform-origin: 0 150px;
-}
-.TripleArea b span {
-  border-radius: 0 150px 0 0;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 25px 0 25px;
+  transform-origin: bottom;
+  left: 125px;
 }
