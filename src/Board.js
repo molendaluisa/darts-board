@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Board.css';
+import './Modal.css';
 import OuterRing from "./OuterRing";
 import DoubleArea from "./DoubleArea";
 import TripleArea from "./TripleArea";
@@ -10,8 +11,14 @@ import Scoreboard from "./ScoreBoard"
 import Average from "./Average";
 import Throw from "./Throw";
 import Header from "./Header";
+import Menu from "./Menu";
+import Modal from "react-modal";
+
+
+Modal.setAppElement('#root')
 
 export default function Board() {
+  const [modal, setModal] = useState(true);
   const [dart1, setDart1] = useState(0);
   const [dart2, setDart2] = useState(0);
   const [dart3, setDart3] = useState(0);
@@ -67,9 +74,9 @@ export default function Board() {
     } else if (rSum === 501) {
       alert(`GAME OVER. ${p.name} is the winner`);
     } else {
-      setPlayer1({ ...player1, currentPlayer: currentPlayer === "player1" ? "turn-wrapper hide": "turn-wrapper"});
-      setPlayer2({ ...player2, currentPlayer: currentPlayer === "player1" ? "turn-wrapper": "turn-wrapper hide"});
-    
+      setPlayer1({ ...player1, currentPlayer: currentPlayer === "player1" ? "turn-wrapper hide" : "turn-wrapper" });
+      setPlayer2({ ...player2, currentPlayer: currentPlayer === "player1" ? "turn-wrapper" : "turn-wrapper hide" });
+
       alert("NO SCORE");
     }
     setDart1(0);
@@ -95,7 +102,7 @@ export default function Board() {
   }
 
   return (
-    <div className="Board">
+    <div className="Board" onClick={() => setModal(false)}>
       <Header start={start} />
       <div className="middle-section">
         <div className="container">
@@ -109,10 +116,13 @@ export default function Board() {
         <div className="scores">
           <Scoreboard player1={player1} player2={player2} handleNext={handleNext} />
           <Throw dart1={dart1} dart2={dart2} dart3={dart3} />
-          <Average player1={player1} player2={player2}  />
+          <Average player1={player1} player2={player2} />
         </div>
       </div>
-    </div>
+      <Modal isOpen={modal}>
+        <Menu />
+      </Modal>
+    </div >
   );
 }
 

@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
-
 .ScoreBoard {
   width: 480px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--kumbh);
   font-size: 20px;
 }
 .ScoreBoard .top,
 .ScoreBoard .bottom {
-  color: #eee;
-  background-color: #333;
+  color: var(--light-gray);
+  background-color: var(--drak-gray);
 }
 
 .ScoreBoard .top {
@@ -16,7 +14,7 @@
 }
 
 .ScoreBoard .darts-count {
-  background-color: yellow;
+  background-color: var(--light-yellow);
   color: #000;
   text-align: center;
 }
@@ -30,12 +28,12 @@
 }
 
 .ScoreBoard .name {
-  color: #333;
+  color: var(--gray-dark);
   font-size: 20px;
   background-color: #fff;
 }
 .ScoreBoard .score {
-  background-color: #1b9714;
+  background-color: var(--dart-green);
   color: #eee;
   text-align: center;
 }
@@ -45,7 +43,7 @@
 }
 
 .ScoreBoard .turn-wrapper {
-  background-color: #a33;
+  background-color: var(--dart-red);
   padding: 10px;
   padding-left: 15px;
 }
