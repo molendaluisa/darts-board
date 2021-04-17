@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './Board.css';
-import './Modal.css';
 import OuterRing from "./OuterRing";
 import DoubleArea from "./DoubleArea";
 import TripleArea from "./TripleArea";
@@ -12,13 +11,9 @@ import Average from "./Average";
 import Throw from "./Throw";
 import Header from "./Header";
 import Menu from "./Menu";
-import Modal from "react-modal";
 
-
-Modal.setAppElement('#root')
 
 export default function Board() {
-  const [modal, setModal] = useState(true);
   const [dart1, setDart1] = useState(0);
   const [dart2, setDart2] = useState(0);
   const [dart3, setDart3] = useState(0);
@@ -102,10 +97,10 @@ export default function Board() {
   }
 
   return (
-    <div className="Board" onClick={() => setModal(false)}>
+    <div className="Board">
       <Header start={start} />
       <div className="middle-section">
-        <div className="container">
+        <div className="board-container">
           <OuterRing />
           <DoubleArea handleShot={handleShot} />
           <OuterSingleArea handleShot={handleShot} />
@@ -119,9 +114,7 @@ export default function Board() {
           <Average player1={player1} player2={player2} />
         </div>
       </div>
-      <Modal isOpen={modal}>
-        <Menu />
-      </Modal>
+      <Menu />
     </div >
   );
 }

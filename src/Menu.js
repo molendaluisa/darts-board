@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import './Menu.css';
+import Modal from "./Modal";
 
 export default function Menu() {
+  const [wrapper, setWrapper] = useState(true);
+
+  function handleWrapper(event) {
+    event.preventDefault();
+    setWrapper(false);
+  }
+
   return (
     <div className="Menu">
-      <h2>hello from modal</h2>
-      <button>&times;</button>
-    </div>
+      {wrapper ? <div className="overlay" onClick={handleWrapper}></div> : null}
+      {wrapper ? <Modal /> : null}
+    </div >
   );
 }

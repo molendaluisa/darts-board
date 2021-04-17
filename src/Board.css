@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
 }
-.Board .container {
+.Board .board-container {
   width: 600px;
   height: 600px;
   background: #333;

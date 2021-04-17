@@ -1,1 +1,67 @@
+.Modal .modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
 
+.Modal h1 {
+  margin: 20px 0;
+  font-size: 36px;
+}
+
+.Modal h2 {
+  color: var(--cream);
+  font-size: 24px;
+}
+
+.Modal .modal-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.Modal .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 275px;
+  padding: 10px 40px;
+  height: 200px;
+}
+
+.Modal .card:nth-child(2) {
+  margin: 0 30px;
+}
+
+.Modal .card:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.Modal .classic {
+  background-color: var(--dart-green-accent);
+}
+.Modal .around {
+  background-color: var(--dart-red-accent);
+}
+
+.Modal .random {
+  background-color: var(--dart-blue-accent);
+}
+
+.Modal .btn {
+  align-self: flex-end;
+  justify-self: flex-end;
+  background-color: var(--cream);
+  border-radius: 100px;
+  color: (--dark-gray);
+  width: 100px;
+}
